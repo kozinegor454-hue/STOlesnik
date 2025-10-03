@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СТО «Лесник» — грузовой сервис</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка -->   
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="images/IMAGE 2025-09-27 21_17_40.jpg" alt="Логотип СТО Лесник" width="60" height="60">
+        <div class="logo">СТО «Лесник»</div>
+      </div>
+      
+      <!-- Мобильное меню -->
+      <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+      
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#price">Прайс</a></li>
+          <li><a href="#portfolio">Примеры работ</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Главная -->
+  <section class="hero">
+    <div class="container">
+      <h1>Надёжный ремонт грузовых машин</h1>
+      <p>Работаем 24/7. Быстро. Качественно. С гарантией.</p>
+      <a href="#services" class="btn">Посмотреть услуги</a>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Наши услуги</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Диагностика</h3>
+          <p>Компьютерная и механическая проверка грузовика.</p>
+        </div>
+        <div class="card">
+          <h3>Ремонт двигателя</h3>
+          <p>Капитальный и текущий ремонт любой сложности.</p>
+        </div>
+        <div class="card">
+          <h3>Шиномонтаж</h3>
+          <p>Замена, балансировка и ремонт шин грузовиков.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+ <!-- Прайс -->
+<section id="price" class="price">
+  <div class="price-overlay"></div>
+  <div class="container">
+    <h2>Прайс</h2>
+    
+    <!-- Кнопки выбора услуги -->
+    <div class="price-categories">
+      <button class="price-category-btn active" data-category="diagnostics">
+        🔧 Диагностика
+      </button>
+      <button class="price-category-btn" data-category="engine">
+        ⚙️ Ремонт двигателя
+      </button>
+      <button class="price-category-btn" data-category="tire">
+        🚗 Шиномонтаж
+      </button>
+      <button class="price-category-btn" data-category="other">
+        🔩 Другие услуги
+      </button>
+    </div>
+
+    <!-- Контейнер для отображения прайса -->
+    <div class="price-content">
+      <!-- Диагностика -->
+      <div class="price-category active" id="diagnostics">
+        <div class="price-category-content">
+          <h3>Диагностика</h3>
+          <div class="price-list">
+            <div class="price-item">
+              <span>Компьютерная диагностика</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Диагностика подвески</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Диагностика тормозной системы</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Полная диагностика</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ремонт двигателя -->
+      <div class="price-category" id="engine">
+        <div class="price-category-content">
+          <h3>Ремонт двигателя</h3>
+          <div class="price-list">
+            <div class="price-item">
+              <span>Замена масла и фильтров</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Ремонт ГРМ</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Капитальный ремонт двигателя</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Замена свечей накаливания</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Шиномонтаж -->
+      <div class="price-category" id="tire">
+        <div class="price-category-content">
+          <h3>Шиномонтаж</h3>
+          <div class="price-list">
+            <div class="price-item">
+              <span>Замена колеса (1 шт.)</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Балансировка колеса</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Ремонт прокола</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Замена камеры</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Другие услуги -->
+      <div class="price-category" id="other">
+        <div class="price-category-content">
+          <h3>Другие услуги</h3>
+          <div class="price-list">
+            <div class="price-item">
+              <span>Ремонт тормозной системы</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Ремонт электрооборудования</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Замена сцепления</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Ремонт коробки передач</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Пескоструйная обработка</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Покраска прицепов</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+            <div class="price-item">
+              <span>Восстановление машин после ДТП</span>
+              <span class="cost">2500₽ н/ч</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Примеры работ -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Примеры наших работ</h2>
+      <div class="portfolio-slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="images/glass.jpg" alt="Ремонт двигателя грузовика">
+            <div class="slide-info">
+              <h3>Пескоструйная обработка</h3>
+              <p>Очистка поверхностей от ржавчины, старой краски и загрязнений с помощью абразивных материалов под высоким давлением. Восстанавливаем первоначальный вид металлических деталей.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/glass2.jpg" alt="Шиномонтаж грузовика">
+            <div class="slide-info">
+              <h3>Пескоструйная обработка</h3>
+
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/pokraska3.jpg" alt="Диагностика автомобиля">
+            <div class="slide-info">
+              <h3>Покраска прицепов</h3>
+              <p>Полное восстановление лакокрасочного покрытия прицепов. От пескоструйной очистки до финишного нанесения эмали. Вернем вашему прицепу заводской вид и защиту от коррозии.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/pokraska.jpg" alt="Ремонт тормозной системы">
+            <div class="slide-info">
+              <h3>Покраска прицепов</h3>
+
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/pokraska2.jpg" alt="Покраска автомобиля">
+            <div class="slide-info">
+              <h3>Покраска прицепов</h3>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/dtp.jpg" alt="Ремонт подвески">
+            <div class="slide-info">
+              <h3>Восстановление машин после ДТП</h3>
+              <p>Полное восстановление геометрии кузова, замена поврежденных элементов и профессиональная покраска. Вернем вашему автомобилю заводские характеристики и безопасность.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/dtp2.jpg" alt="Электрооборудование">
+            <div class="slide-info">
+              <h3>Восстановление машин после ДТП</h3>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/dtp3.jpg" alt="Сварные работы">
+            <div class="slide-info">
+              <h3>Восстановление машин после ДТП</h3>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/kpp1.jpg" alt="Ремонт КПП">
+            <div class="slide-info">
+              <h3>Ремонт коробки передач</h3>
+              <p>Капитальный ремонт механической КПП</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Кнопки навигации -->
+        <button class="slider-btn prev-btn" aria-label="Предыдущий слайд">‹</button>
+        <button class="slider-btn next-btn" aria-label="Следующий слайд">›</button>
+        
+        <!-- Индикаторы -->
+        <div class="slider-indicators">
+          <span class="indicator active" data-slide="0"></span>
+          <span class="indicator" data-slide="1"></span>
+          <span class="indicator" data-slide="2"></span>
+          <span class="indicator" data-slide="3"></span>
+          <span class="indicator" data-slide="4"></span>
+          <span class="indicator" data-slide="5"></span>
+          <span class="indicator" data-slide="6"></span>
+          <span class="indicator" data-slide="7"></span>
+          <span class="indicator" data-slide="8"></span>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+
+
+
+
+
+  <!-- Контакты -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contact-info">
+        <p>📍 Торжок, ул. Володарского, 68</p>
+        <p>📞 +7 (910) 843-55-14</p>
+        <p>✉️ sto.torzoc@yandex.ru</p>
+      </div>
+      
+      <div class="map-container">
+        <div class="map-placeholder">
+          <h3>Как нас найти</h3>
+          <p>Мы находимся в удобном месте с хорошим подъездом для грузового транспорта</p>
+          <div id="map"></div>
+          <div class="map-links">
+            <a href="https://yandex.ru/maps/?text=Торжок, ул. Володарского, 68" target="_blank" class="map-link">
+              <span>🗺️</span> Открыть в Яндекс Картах
+            </a>
+            <a href="https://www.google.com/maps/search/Торжок, ул. Володарского, 68" target="_blank" class="map-link">
+              <span>🗺️</span> Открыть в Google Картах
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <div class="container">
+      <p>© 2025 СТО «Лесник». Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Подключаем скрипты -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
