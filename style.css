@@ -1080,3 +1080,23 @@ footer p {
     var(--primary-light) 50%, 
     var(--accent) 100%);
 }
+
+
+
+
+.seo-text {
+  padding: 40px 0;
+  background: #f8f9fa;
+  line-height: 1.6;
+}
+
+.seo-text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.seo-text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
